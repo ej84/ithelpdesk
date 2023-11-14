@@ -3,8 +3,10 @@
 @tailwind utilities;
 
 @layer base {
-
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     @apply font-bold;
   }
 
@@ -29,20 +31,19 @@
   }
 
   form {
-    @apply rounded-xl p-4
+    @apply rounded-xl p-4;
   }
 
   label {
-    @apply mt-4
+    @apply mt-4;
   }
 
-  input, select, textarea {
+  input,
+  select,
+  textarea {
     @apply m-1 rounded bg-card p-1;
   }
-
 }
-
-
 
 @layer components {
   .icon {
