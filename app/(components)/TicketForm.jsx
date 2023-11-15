@@ -99,9 +99,9 @@ const TicketForm = ({ ticket }) => {
           value={formData.category}
           onChange={handleChange}
         >
-          <option value="hardwareIssue">Hardware Issue</option>
-          <option value="softwareIssue">Software Issue</option>
-          <option value="others">Others</option>
+          <option value="Hardware Issue">Hardware Issue</option>
+          <option value="Software Issue">Software Issue</option>
+          <option value="Others">Others</option>
         </select>
         <label>Priority</label>
         <div>
