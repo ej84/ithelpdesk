@@ -19,11 +19,15 @@ const UserPostDisplay = ({ userPost }) => {
   };
 
   return (
-    <div className="flex flex-col bg-card hover:bg-card-hover rounded-md shadow-lg p-20 m-2">
-      <h4>{userPost.postTitle}</h4>
-      <p>{userPost.postCategory}</p>
-      <p>Created At: {formatTimestamp(userPost.createdAt)}</p>
-      <textarea>{userPost.postBody}</textarea>
+    <div className="flex flex-col bg-card shadow-lg p-20 m-10">
+      <div className="block pb-3 m-3 w-fit h-fit">
+        <h3>{userPost.postTitle}</h3>
+      </div>
+      <div className="flex flex-col">
+        <p>Category: {userPost.postCategory}</p>
+        <p>Created At: {formatTimestamp(userPost.createdAt)}</p>
+        <p>{userPost.postBody}</p>
+      </div>
     </div>
   );
 };

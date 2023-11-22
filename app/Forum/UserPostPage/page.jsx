@@ -21,7 +21,7 @@ const UserPostPage = async () => {
   }
 
   return (
-    <div className="p-10 w-1/2">
+    <div className="md:grid grid-cols-2 lg:grid-cols-4">
       {userposts?.map((filteredPost, index) => (
         <UserPostDisplay id={index} key={index} userPost={filteredPost} />
       ))}
