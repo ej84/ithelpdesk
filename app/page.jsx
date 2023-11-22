@@ -6,7 +6,6 @@ const getTickets = async () => {
     const resp = await fetch("http://localhost:3000/api/Tickets", {
       cache: "no-store",
     });
-
     return resp.json();
   } catch (error) {
     console.log("Failed to get tickets", error);
