@@ -1,5 +1,6 @@
 import React from "react";
 import TicketCard from "./(components)/TicketCard";
+import ModalUI from "./(components)/Modal";
 
 const getTickets = async () => {
   try {
@@ -45,6 +46,7 @@ const Dashboard = async () => {
             </div>
           ))}
       </div>
+      <ModalUI />
     </div>
   );
 };
