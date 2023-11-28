@@ -118,14 +118,13 @@ export default function ModalUI() {
     color: yellow;
     transition: all 150ms ease;
     cursor: pointer;
-    background: ${theme.palette.mode === "dark" ? grey[900] : "#fff"};
+    background: ${theme.palette.mode === "dark" ? grey[900] : "#FFF"};
     border: 1px solid ${theme.palette.mode === "dark" ? grey[700] : grey[200]};
-    color: ${theme.palette.mode === "dark" ? "#fff" : grey[900]};
+    color: #FFF;
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  
     &:hover {
-      background: ${theme.palette.mode === "dark" ? grey[800] : grey[50]};
-      border-color: ${theme.palette.mode === "dark" ? grey[600] : grey[300]};
+      background: #FFF;
+      color: ${grey[700]};
     }
   
     &:active {
