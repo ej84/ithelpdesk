@@ -78,14 +78,12 @@ export default function ModalUI() {
     flex-direction: column;
     gap: 8px;
     overflow: hidden;
-    background-color: ${theme.palette.mode === "dark" ? grey[900] : "#FFF"};
+    background-color: rgb(43 52 65 / 1);
     border-radius: 8px;
     border: 1px solid ${theme.palette.mode === "dark" ? grey[700] : grey[200]};
-    box-shadow: 0px 4px 12px ${
-      theme.palette.mode === "dark" ? "rgba(0,0,0, 0.50)" : "rgba(0,0,0, 0.20)"
-    };
+    box-shadow: 0px 4px 12px rgba(0,0,0, 0.20);
     padding: 1rem;
-    color: ${theme.palette.mode === "dark" ? grey[50] : grey[900]};
+    color: #FFF;
     font-family: IBM Plex Sans, sans-serif;
     font-weight: 500;
     text-align: start;
@@ -115,16 +113,14 @@ export default function ModalUI() {
     line-height: 1.5;
     padding: 8px 16px;
     border-radius: 8px;
-    color: yellow;
+    color: #FFF;
     transition: all 150ms ease;
     cursor: pointer;
-    background: ${theme.palette.mode === "dark" ? grey[900] : "#FFF"};
-    border: 1px solid ${theme.palette.mode === "dark" ? grey[700] : grey[200]};
-    color: #FFF;
+    border: 1px solid #FFF;
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     &:hover {
       background: #FFF;
-      color: ${grey[700]};
+      color: rgb(24 34 47 / 1);
     }
   
     &:active {
@@ -153,9 +149,6 @@ export default function ModalUI() {
         slots={{ backdrop: StyledBackdrop }}
       >
         <ModalContent sx={style}>
-          <h3 id="unstyled-modal-title" className="modal-title">
-            Create A New Ticket
-          </h3>
           <TicketForm ticket="new" />
 
           {/*<p id="unstyled-modal-description" className="modal-description">
