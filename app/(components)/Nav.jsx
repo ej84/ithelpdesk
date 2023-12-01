@@ -9,8 +9,8 @@ import Link from "next/link";
 
 const Nav = () => {
   return (
-    <nav className="flex justify-between bg-nav p-4">
-      <div className="flex items-center ml-5 space-x-7">
+    <nav className="flex justify-center bg-nav p-4 md:justify-between">
+      <div className="flex items-center space-x-7 md:ml-5">
         <Link href="/">
           <FontAwesomeIcon icon={faHome} className="icon ml-1" />
           <p className="text-xs">Home</p>

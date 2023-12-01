@@ -68,8 +68,8 @@ export default function ModalUI() {
   `;
 
   const style = {
-    width: 800,
-    height: 850,
+    width: "50%",
+    height: "90%",
   };
 
   const ModalContent = styled(Box)(
@@ -148,12 +148,8 @@ export default function ModalUI() {
         onClose={handleClose}
         slots={{ backdrop: StyledBackdrop }}
       >
-        <ModalContent sx={style}>
+        <ModalContent sx={style} className="justify-center flex-col">
           <TicketForm ticket="new" />
-
-          {/*<p id="unstyled-modal-description" className="modal-description">
-            Aliquid amet deserunt earum!
-            </p>*/}
         </ModalContent>
       </Modal>
     </div>
